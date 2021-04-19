@@ -31,4 +31,9 @@ As above in the python language Java does also have a library called  java.util.
 JavaScript also uses regular expressions, it has methods test() and exec() these are direct regex methods. The string class then has methods that have regex’s methods inside of them for example match(), replace(), search() and split these all perform regex searches on strings. If you want to know if there is a pattern found in a string, you would use the test() or search() methods but for more information you would use the exec() or match() methods but is slower in execution. Is you are to use the exec() or match() and if the match succeeds, these methods return an array and update the properties of the associated regular expression object.  
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions.
 
+Can all formal languages be encoded as regular expressions?
+
+Many formal languages can be encoded as a regular expressions, but there are some that are difficult and sometimes really hard to recognize. Also there are formal languages that cannot be recognized by a computer https://dzone.com/articles/back-basics-regular.
+Most languages have simple ways of being identified in their formal languages, so in turn this makes it easy for them to be formed into regular expressions, as regular expressions such for patterns some languages have no pattern to follow. http://blog.kenficara.com/2013/06/30/irregular-language-and-regular-expressions/
+
 
