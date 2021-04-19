@@ -1,5 +1,16 @@
+#Adapting code from Graph Theory class Shunting 
+#Create a a function using shunting with operators in order of precedence
+
+
+
 def shunt(infix):
+    #Operator precedence higher the number what needs to be done 1st
+    operPrec = {'*': 80, '?': 75, '+': 70, '.': 65, '|': 60, ')': 55, '(': 50}
     
+    while infix:
+         
+
+
 while there are tokens to be read:
     read a token.
     if the token is a number, then:
@@ -29,3 +40,5 @@ if there are no more tokens to read then:
         /* If the operator token on the top of the stack is a parenthesis, then there are mismatched parentheses. */
         pop the operator from the operator stack onto the output queue.
 exit.
+
+infix = "3+4*(2-1)"

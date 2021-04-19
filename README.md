@@ -1,5 +1,15 @@
 # graph-theory-project
 
+Project Brief 
+
+As our end of year project, we are to research and design a Python program that will allow the user to input a regular expression and will then return the string that was found by the program.
+
+Research
+
+As I was looking to get started with the project I realised, that my understanding of the algorithms was very minimal so I needed to grasp the concepts and what is actually going on before proceeding any further. 
+First of my research was to get a better understanding of the Shunting Yard algorithm, after watching this YouTube video https://www.youtube.com/watch?v=HJOnJU77EUs it gave me a far better understanding of why this is used.  So to understand that at the start we need to see if an expression is balanced, so firstly check if the parenthesis is an ( and we keep popping them on to the stack until we find a corresponding ) then we pop them off the stack we continue this through until the stack is empty. If the stack is empty its balanced, if it is not empty it is not balanced then the second part is the postfix where this time you are putting an integer to a stack then once you hit an operator you must check to see there at least two or more integers on the stack otherwise the expression is invalid. Once there are two or more the first integer is put to the left and then an operator in the middle and the second integer to the right, they are then evaluate and put to the stack we continue doing this until there is one element on the stack and if there is not then the expression is invalid. Then we are ready to do postfix which is place all integers on the stack, if we come across and operator pop the two elements off the stack instead of evaluating we put parenthesis around the two numbers. The expression you have at the end of the string is the result, now we have to convert from infix to postfix which is a little more complex we have to firstly give precedence to our operators. So you could have 2 as high precedence for * / % , 1 as low for + -, 0 for ( [{ this basically means any operator can go after these and finally 3 immediate )]}. You can only then place operators on the stack if its empty or have an opening bracket there, you can only put a high precedence there if there is precedence below it we can place it on the stack. We then continue until we reach an operator of equal or less precedence and then we pop from the stack we keep popping until we can add the next operator to the stack then we pop everything off and that is the result.
+
+
 What Is A Regular Expression
 
 A regular expression which is also known as regex or regexp is a sequence of characters that specifies a particular search pattern. Usually these patterns are used by string-searching-algorithms for find or find and replace operations on a strings, or for input validation. It is a theoretical computer and formal language theory.
