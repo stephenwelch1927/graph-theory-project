@@ -24,29 +24,29 @@ def shunt(infix):
 
         if c == '(':
             # Push an open bracket to the stack
-            opers.append(c)
+            operators.append(c)
         elif c == ')':
             # Pop operators stack until open bracket is found
-            while opers[-1] != '(':
-                postfix.append(opers.pop())
+            while operators[-1] != '(':
+                postfix.append(operators.pop())
 
             # Remove open bracket
-            opers.pop()
+            operators.pop()
 
         elif c in prec:
             # Push the operator stack until you find an open bracket
-            while opers and  prec[c] < prec[opers[-1]]:
+            while operators and  prec[c] < prec[operators[-1]]:
                 # Push c to the operator stack with higher precidence to the output
-                postfix.append(opers.pop())
+                postfix.append(operators.pop())
             # Push c to the operator stack
-            opers.append(c)
+            operators.append(c)
         else:
             # Typically we just push the character to the output
             postfix.append(c)
 
     # Pop all operators to the output
-    while opers:
-        postfix.append(opers.pop())
+    while operatorss:
+        postfix.append(operators.pop())
 
     # Convert output list to string
     return ''.join(postfix)
