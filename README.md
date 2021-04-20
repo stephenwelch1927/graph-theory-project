@@ -1,9 +1,9 @@
 # graph-theory-project
 
-Project Brief 
+## Project Brief 
 
 As our end of year project, we are to research and design a Python program that will allow the user to input a regular expression and will then return the string that was found by the program.
-
+___
 Research
 
 As I was looking to get started with the project I realised, that my understanding of the algorithms was very minimal so I needed to grasp the concepts and what is actually going on before proceeding any further. 
