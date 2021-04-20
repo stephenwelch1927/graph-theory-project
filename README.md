@@ -7,7 +7,22 @@ ___
 ## Research
 
 As I was looking to get started with the project I realised, that my understanding of the algorithms was very minimal so I needed to grasp the concepts and what is actually going on before proceeding any further. 
+
+### Shunting Yard Algorithm
 First of my research was to get a better understanding of the Shunting Yard algorithm, after watching this YouTube video https://www.youtube.com/watch?v=HJOnJU77EUs it gave me a far better understanding of why this is used.  So to understand that at the start we need to see if an expression is balanced, so firstly check if the parenthesis is an ( and we keep popping them on to the stack until we find a corresponding ) then we pop them off the stack we continue this through until the stack is empty. If the stack is empty its balanced, if it is not empty it is not balanced then the second part is the postfix where this time you are putting an integer to a stack then once you hit an operator you must check to see there at least two or more integers on the stack otherwise the expression is invalid. Once there are two or more the first integer is put to the left and then an operator in the middle and the second integer to the right, they are then evaluate and put to the stack we continue doing this until there is one element on the stack and if there is not then the expression is invalid. Then we are ready to do postfix which is place all integers on the stack, if we come across and operator pop the two elements off the stack instead of evaluating we put parenthesis around the two numbers. The expression you have at the end of the string is the result, now we have to convert from infix to postfix which is a little more complex we have to firstly give precedence to our operators. So you could have 2 as high precedence for * / % , 1 as low for + -, 0 for ( [{ this basically means any operator can go after these and finally 3 immediate )]}. You can only then place operators on the stack if its empty or have an opening bracket there, you can only put a high precedence there if there is precedence below it we can place it on the stack. We then continue until we reach an operator of equal or less precedence and then we pop from the stack we keep popping until we can add the next operator to the stack then we pop everything off and that is the result.
+
+### Thompson's Construction Algorithm
+
+The next algorithm to look at which we were shown in class is the Thompson’s construction, this is another method of transforming a regular expression into a nondeterministic finite automaton(NFA). This NFA can be used to match strings against regular expressions, it’s a popular algorithm as it can compile regular expressions into NFA’s.
+The algorithm works recursively by splitting and expression into its constituent subexpressions, from which the NFA will be constructed using a set of rules. More precisely, from a regular expression E, the obtained automaton A with the transition function Δ[clarification needed] respects the following properties:
+•	A has exactly one initial state q0, which is not accessible from any other state. That is, for any state q and any letter a,   does not contain q0.
+•	A has exactly one final state qf, which is not co-accessible from any other state. That is, for any letter a,  .
+•	Let c be the number of concatenation of the regular expression E and let s be the number of symbols apart from parentheses — that is, |, *, a and ε. Then, the number of states of A is 2s − c (linear in the size of E).
+•	The number of transitions leaving any state is at most two.
+•	Since an NFA of m states and at most e transitions from each state can match a string of length n in time O(emn), a Thompson NFA can do pattern matching in linear time, assuming a fixed-size alphabet.[4]
+Taken from https://en.wikipedia.org/wiki/Thompson%27s_construction
+
+
 
 ___
 
