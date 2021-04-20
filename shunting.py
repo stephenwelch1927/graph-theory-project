@@ -7,7 +7,49 @@ def shunt(infix):
     #Operator precedence higher the number what needs to be done 1st
     operPrec = {'*': 80, '?': 75, '+': 70, '.': 65, '|': 60, ')': 55, '(': 50}
     
+    #Infix list 
+    infix = list(infix)[::-1]
+
+    #Operator stack
+    operators = []
+
+    #Postfix stack
+    postfix[]
+
+      # Loop through the input, one character at a time
     while infix:
+        # Pop a character from the list
+        c = infix.pop() # Removes the last element in infix as a list
+                        # & returns whatever is poped off
+
+        if c == '(':
+            # Push an open bracket to the stack
+            opers.append(c)
+        elif c == ')':
+            # Pop operators stack until open bracket is found
+            while opers[-1] != '(':
+                postfix.append(opers.pop())
+
+            # Remove open bracket
+            opers.pop()
+
+        elif c in prec:
+            # Push the operator stack until you find an open bracket
+            while opers and  prec[c] < prec[opers[-1]]:
+                # Push c to the operator stack with higher precidence to the output
+                postfix.append(opers.pop())
+            # Push c to the operator stack
+            opers.append(c)
+        else:
+            # Typically we just push the character to the output
+            postfix.append(c)
+
+    # Pop all operators to the output
+    while opers:
+        postfix.append(opers.pop())
+
+    # Convert output list to string
+    return ''.join(postfix)
          
 
 
