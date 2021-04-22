@@ -22,6 +22,10 @@ The algorithm works recursively by splitting and expression into its constituent
 •	Since an NFA of m states and at most e transitions from each state can match a string of length n in time O(emn), a Thompson NFA can do pattern matching in linear time, assuming a fixed-size alphabet.[4]
 Taken from https://en.wikipedia.org/wiki/Thompson%27s_construction
 
+___
+## Issues Encounter
+As I was initially setting up my environment for working using Debian I had a lot of issues, I tried to resolve this so instead of using Debian I reverted to Ubuntu.
+
 
 
 ___
