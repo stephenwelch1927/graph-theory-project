@@ -23,11 +23,10 @@ The algorithm works recursively by splitting and expression into its constituent
 Taken from https://en.wikipedia.org/wiki/Thompson%27s_construction
 
 ___
-## Issues Encounter
+## Issues Encountered
 As I was initially setting up my environment for working using Debian I had a lot of issues, I tried to resolve this so instead of using Debian I reverted to Ubuntu.
 
-
-
+As I’m beginning to use python, I’m experiencing some issues with actually how it behaves different compared to say Java. So I looked up a small video just to understand how classes work and how functions work https://www.youtube.com/watch?v=I2wURDqiXdM
 ___
 
 
