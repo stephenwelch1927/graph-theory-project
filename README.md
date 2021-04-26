@@ -22,6 +22,26 @@ The algorithm works recursively by splitting and expression into its constituent
 •	Since an NFA of m states and at most e transitions from each state can match a string of length n in time O(emn), a Thompson NFA can do pattern matching in linear time, assuming a fixed-size alphabet.[4]
 Taken from https://en.wikipedia.org/wiki/Thompson%27s_construction
 
+### Understanding the difference between NFA and DFA
+
+As I was getting to understand Automaton it was quite confusing as to what is a DFA(Deterministic Finite Automaton) and what is a NFA(Nondeterministic Finite Automaton), so again with previous algorithms I set out to understand more about this if foun that https://www.geeksforgeeks.org/difference-between-dfa-and-nfa/ was really good at explainig the differences.
+
+So a DFA is set to deterministic If corresponding to an input symbol, there is a single resultant state i.e. there is only one transition. A deterministic finite automata is set to five tuples and represented as,  M = {Q, Σ, δ, q0, F}.
+
+Q: A non empty finite set of states present in the finite control(qo, q1, q2, …). 
+Σ: A non empty finite set of input symbols. 
+δ: It is a transition function that takes two arguments, a state and an input symbol, it returns a single state. 
+qo: It is starting state, one of the state in Q. 
+F: It is non-empty set of final states/ accepting states from the set belonging to Q.  
+
+Now an NFA is set to be nondeterministic, this means that there is more than one possible transition from one state on the same input symbol. A nondeterministic finite automata also is set to five tuples and represented as M = {Q, Σ, δ, q0, F}.
+Q: A set of non empty finite states. 
+Σ: A set of non empty finite input symbols. 
+δ: It is a transition function that takes a state from Q and an input symbol from and returns a subset of Q. 
+qo: Initial state of NFA and member of Q. 
+F: A non-empty set of final states and member of Q. 
+
+
 ___
 ## Issues Encountered
 As I was initially setting up my environment for working using Debian I had a lot of issues, I tried to resolve this so instead of using Debian I reverted to Ubuntu.

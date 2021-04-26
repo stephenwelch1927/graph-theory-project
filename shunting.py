@@ -14,7 +14,7 @@ def shunt(infix):
     operators = []
 
     #Postfix stack
-    postfix[]
+    postfix = []
 
       # Loop through the input, one character at a time
     while infix:
@@ -54,3 +54,6 @@ def shunt(infix):
 
 
 infix = "3+4*(2-1)"
+postfix = "3421-*+"
+
+print(f"Infix:  {infix}")
