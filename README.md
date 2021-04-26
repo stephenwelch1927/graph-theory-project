@@ -41,6 +41,9 @@ Q: A set of non empty finite states.
 qo: Initial state of NFA and member of Q. 
 F: A non-empty set of final states and member of Q. 
 
+#### DFA Diagram Example
+![DFA](https://user-images.githubusercontent.com/48323994/116069426-46949000-a683-11eb-97b7-c21bf1e19b00.PNG)
+
 
 ___
 ## Issues Encountered
