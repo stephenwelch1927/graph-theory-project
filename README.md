@@ -44,6 +44,9 @@ F: A non-empty set of final states and member of Q.
 #### DFA Diagram Example
 ![DFA](https://user-images.githubusercontent.com/48323994/116069426-46949000-a683-11eb-97b7-c21bf1e19b00.PNG)
 
+#### NFA Diagram Example
+![NFA](https://user-images.githubusercontent.com/48323994/116071192-7fcdff80-a685-11eb-8807-f0089c42a63e.PNG)
+
 
 ___
 ## Issues Encountered
