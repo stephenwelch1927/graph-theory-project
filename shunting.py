@@ -45,7 +45,7 @@ def shunt(infix):
             postfix.append(c)
 
     # Pop all operators to the output
-    while operatorss:
+    while operators:
         postfix.append(operators.pop())
 
     # Convert output list to string

@@ -9,6 +9,7 @@ ___
 As I was looking to get started with the project I realised, that my understanding of the algorithms was very minimal so I needed to grasp the concepts and what is actually going on before proceeding any further. 
 
 ### Shunting Yard Algorithm
+
 First of my research was to get a better understanding of the Shunting Yard algorithm, after watching this YouTube video https://www.youtube.com/watch?v=HJOnJU77EUs it gave me a far better understanding of why this is used.  So to understand that at the start we need to see if an expression is balanced, so firstly check if the parenthesis is an ( and we keep popping them on to the stack until we find a corresponding ) then we pop them off the stack we continue this through until the stack is empty. If the stack is empty its balanced, if it is not empty it is not balanced then the second part is the postfix where this time you are putting an integer to a stack then once you hit an operator you must check to see there at least two or more integers on the stack otherwise the expression is invalid. Once there are two or more the first integer is put to the left and then an operator in the middle and the second integer to the right, they are then evaluate and put to the stack we continue doing this until there is one element on the stack and if there is not then the expression is invalid. Then we are ready to do postfix which is place all integers on the stack, if we come across and operator pop the two elements off the stack instead of evaluating we put parenthesis around the two numbers. The expression you have at the end of the string is the result, now we have to convert from infix to postfix which is a little more complex we have to firstly give precedence to our operators. So you could have 2 as high precedence for * / % , 1 as low for + -, 0 for ( [{ this basically means any operator can go after these and finally 3 immediate )]}. You can only then place operators on the stack if its empty or have an opening bracket there, you can only put a high precedence there if there is precedence below it we can place it on the stack. We then continue until we reach an operator of equal or less precedence and then we pop from the stack we keep popping until we can add the next operator to the stack then we pop everything off and that is the result.
 
 ### Thompson's Construction Algorithm
@@ -50,11 +51,17 @@ F: A non-empty set of final states and member of Q.
 
 ___
 ## Issues Encountered
+
 As I was initially setting up my environment for working using Debian I had a lot of issues, I tried to resolve this so instead of using Debian I reverted to Ubuntu.
 
 As I’m beginning to use python, I’m experiencing some issues with actually how it behaves different compared to say Java. So I looked up a small video just to understand how classes work and how functions work https://www.youtube.com/watch?v=I2wURDqiXdM
 ___
 
+## Aditional Material Studied
+
+Well working on this README file I was limited in my knowledge of Markdown syntax, so I went off and read up some more additional material. I found that GitHub cheat sheet extremely useful with using Markdown syntax. https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf
+
+___
 
 ## What Is A Regular Expression
 
