@@ -2,6 +2,9 @@
 
 def menu():
     print("*******************************************")
-    print("       RegEx Converter    ")
-    print(" Enter main.py --Run (to run the program")
+    print("       RegEx Converter                     ")
+    print(" Enter runner.py --Run (to run the program)  ")
     print("*******************************************")
+
+
+menu()
