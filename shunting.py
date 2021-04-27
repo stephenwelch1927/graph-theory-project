@@ -4,6 +4,7 @@
 
 
 def shunt(infix):
+    print("In Shunt")
     #Operator precedence higher the number what needs to be done 1st
     operPrec = {'*': 80, '?': 75, '+': 70, '.': 65, '|': 60, ')': 55, '(': 50}
     
@@ -33,9 +34,9 @@ def shunt(infix):
             # Remove open bracket
             operators.pop()
 
-        elif c in prec:
+        elif c in operPrec:
             # Push the operator stack until you find an open bracket
-            while operators and  prec[c] < prec[operators[-1]]:
+            while operators and  operPrec[c] < operPrec[operators[-1]]:
                 # Push c to the operator stack with higher precidence to the output
                 postfix.append(operators.pop())
             # Push c to the operator stack
@@ -47,13 +48,13 @@ def shunt(infix):
     # Pop all operators to the output
     while operators:
         postfix.append(operators.pop())
-
     # Convert output list to string
-    return ''.join(postfix)
+    return postfix
          
 
+#print(f"postfix: {postfix}" )
+# infix = "3+4*(2-1)"
+# postfix = "3421-*+"
 
-infix = "3+4*(2-1)"
-postfix = "3421-*+"
-
-print(f"Infix:  {infix}")
+# print(f"Infix:  {infix}")
+# print(postfix )
