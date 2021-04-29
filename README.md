@@ -22,6 +22,10 @@ As in the below image type Git Clone before the URL.
 
 ![Cmd-Clone](https://user-images.githubusercontent.com/48323994/116545486-6678bd80-a8e8-11eb-997b-152e475fd0e6.PNG)
 
+Once the cloning has been completed we will then need to change our directory and move into the graph-theory-project folder as in the below image.
+
+
+
 
 ## Research
 
