@@ -27,7 +27,14 @@ Once the cloning has been completed we will then need to change our directory an
 ![cmd-cd](https://user-images.githubusercontent.com/48323994/116546064-15b59480-a8e9-11eb-86a0-8c89f218a5a6.PNG)
 
 
+### Running the Program
 
+Now that you are in the folder type Python3 runner.py.
+
+You will then be prompt with a command line menu.
+
+Select 1 for your Infix, select 2 for the string you wish to match
+and finally 3 to exit the application.
 
 ## Research
 
