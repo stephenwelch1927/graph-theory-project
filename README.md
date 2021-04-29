@@ -19,7 +19,8 @@ To clone the repository you will need to take the repository link below : -
 https://github.com/stephenwelch1927/graph-theory-project
 
 As in the below image type Git Clone before the URL.
-![Cmd-Clone](https://user-images.githubusercontent.com/48323994/116544515-26fda180-a8e7-11eb-821c-a24b105ead3c.PNG)
+
+![Cmd-Clone](https://user-images.githubusercontent.com/48323994/116545486-6678bd80-a8e8-11eb-997b-152e475fd0e6.PNG)
 
 
 ## Research
