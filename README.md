@@ -4,6 +4,18 @@
 
 As our end of year project, we are to research and design a Python program that will allow the user to input a regular expression and will then return the string that was found by the program.
 ___
+
+## Running and Cloning the Program
+
+## Prerequisites 
+
+Firstly if you would like to clone the program you will need to have Git installed in your local machine, you can install Git for your desired OS by following the guide in the Git guides https://github.com/git-guides/install-git.
+You are also going to need Python 3 downloaded and available on your local machine, if you do not have this you can download you can download it here https://www.python.org/downloads/. You will need to select your OS and follow the instructions. 
+Cloning 
+To clone the repository you will need to take the repository link below : -
+https://github.com/stephenwelch1927/graph-theory-project
+
+
 ## Research
 
 As I was looking to get started with the project I realised, that my understanding of the algorithms was very minimal so I needed to grasp the concepts and what is actually going on before proceeding any further. 
