@@ -7,13 +7,13 @@ ___
 
 ## Running and Cloning the Program
 
-## Prerequisites 
+### Prerequisites 
 
 Firstly if you would like to clone the program you will need to have Git installed in your local machine, you can install Git for your desired OS by following the guide in the Git guides https://github.com/git-guides/install-git.
 
 You are also going to need Python 3 downloaded and available on your local machine, if you do not have this you can download it here https://www.python.org/downloads/. You will need to select your OS and follow the instructions. 
 
-## Cloning
+### Cloning
  
 To clone the repository you will need to take the repository link below : -
 https://github.com/stephenwelch1927/graph-theory-project
@@ -39,6 +39,34 @@ You will then be prompt with a command line menu.
 
 Select 1 for your Infix, select 2 for the string you wish to match
 and finally 3 to exit the application.
+
+___
+
+## Algorithm 
+
+Looking at the code we were given I had to make a choice on how I could go about putting everything together, I looked at maybe putting everything into one big God class but decided to take a kind of object orientated approach. I looked at adopting this approach as I could increment parts of the code in blocks and get the functions/classes working below I will explain every file class and what its content is.
+
+### Thompson.py 
+
+This file contained code we had implemented during class, this code is where we have a method that will transform a regular expression 
+into an NFA.
+
+### Shunting.py
+
+In the shunting file I have a few classes incorporated as well as the initial shunting yard algorithm, the shunting yard algorithm allows us to parse an infix notation to a post fix notation. We have also a State and NFA class, the state class allows us to go through a start and accept state. The NFA class this is where the matching of the string takes place and finally you have re_to_nfa this function takes in the postfix loops through it.
+
+### Menu.py
+
+Menu is a function that has a menu display it also takes in a user input.
+
+### Runner.py
+
+This class is where everything is executed, so we import all the files Thompson, Shunting and Menu the menu is the first function called to display the menu. We then have 3 options available the first option is for the user to input and Infix expression we take this in to a variable. The second option then has the user input a string that they would like to parse, in here we are calling functions shunt, nfa and match. This is where we passing infix, postfix and myString and are then checked to see if the match is true or false. Finally we have an else statement that exits out of the application when option 3 is selected.
+
+### Reflection of Algorithm
+On reflection I don’t think that this was probably the most efficient way to code this, with my limited knowledge of Python this method is what best worked for my understanding. 
+
+___
 
 ## Research
 
