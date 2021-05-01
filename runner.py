@@ -8,12 +8,17 @@ def runner():
         option = menu.menu()
         if option == "1":
             #infix = "3+4*(2-1)"
-            myInfix = input("Enter Infix Expression: ")
+            infix = input("Enter Infix Expression: ")
         elif option == "2":
             myString = input("Enter String: ")
-            postfix = shunting.shunt(myInfix)
-            print(f"postfix: {postfix}" )
+            print(f"infix: {infix}")
+            print(f"string: {myString}")
+            postfix = shunting.shunt(infix)
+            nfa = shunting.re_to_nfa(postfix)
+            match = nfa.match(myString)
+            print(f"Match '{myString}': {nfa.match(myString)}")
+            print()
         else:
             sys.exit()
-    
+# Run the program call to function
 runner()

@@ -11,7 +11,7 @@ ___
 
 Firstly if you would like to clone the program you will need to have Git installed in your local machine, you can install Git for your desired OS by following the guide in the Git guides https://github.com/git-guides/install-git.
 
-You are also going to need Python 3 downloaded and available on your local machine, if you do not have this you can download you can download it here https://www.python.org/downloads/. You will need to select your OS and follow the instructions. 
+You are also going to need Python 3 downloaded and available on your local machine, if you do not have this you can download it here https://www.python.org/downloads/. You will need to select your OS and follow the instructions. 
 
 ## Cloning
  
@@ -86,7 +86,7 @@ ___
 
 As I was initially setting up my environment for working using Debian I had a lot of issues, I tried to resolve this so instead of using Debian I reverted to Ubuntu.
 
-As I’m beginning to use python, I’m experiencing some issues with actually how it behaves different compared to say Java. So I looked up a small video just to understand how classes work and how functions work https://www.youtube.com/watch?v=I2wURDqiXdM
+As I’m beginning to use python, I’m experiencing some issues with actually how it behaves different compared to say Java. So I looked up a small video just to understand how classes work and how functions work. https://www.youtube.com/watch?v=I2wURDqiXdM
 ___
 
 ## Aditional Material Studied
